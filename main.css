@@ -1,53 +1,44 @@
-/* Variables */
-/* Fonts */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,700");
-html,
-body {
-  overflow: hidden;
-  height: 100%;
-}
-body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  margin: 0;
-}
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:700,800,400,300");
 /* Layout */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* Styling */
-.header-title {
-  color: #000;
-  text-align: center;
-  background-position: 50% 50%;
-  background-size: cover;
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+.profile {
   padding: 10% 0;
+  text-align: center;
 }
-.header-title h1 {
-  font-size: 1.5rem;
-}
-.header-title h2 {
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-.header-title-avatar {
+.profile-img {
+  background-image: url("http://i3.minus.com/ibwR0eNVkxC4fP.jpg");
   background-size: cover;
-  border-radius: 100%;
-  margin: 0 auto 2rem auto;
   width: 6rem;
   height: 6rem;
+  margin: 0 auto;
+  border-radius: 100%;
 }
-.header-title-hgroup {
-  border: 1px solid #000;
-  display: inline-block;
-  padding: 0.3em 1em 0.5em 1em;
+.profile-name {
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 0;
 }
-/* Theme */
-.header-title-style-1 .header-title-avatar {
-  background-image: url("avatar.jpg");
+.profile-title {
+  font-weight: 400;
+  font-size: 28px;
+  color: #ccc;
+}
+.profile-text {
+  max-width: 640px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+.profile-link b {
+  color: #4d90fe;
+  text-decoration: underline;
 }

@@ -1,10 +1,12 @@
 var gulp = require('gulp'),
   stylus = require('gulp-stylus'),
+  minifyCSS = require('gulp-minify-css'),
   connect = require('gulp-connect');
 
 gulp.task('stylus', function () {
     gulp.src('./*.styl')
         .pipe(stylus())
+        .pipe(minifyCSS())
         .pipe(gulp.dest('./'));
 });
  
